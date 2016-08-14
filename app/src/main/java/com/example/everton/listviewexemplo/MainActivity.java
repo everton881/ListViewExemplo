@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            carros = new ArrayList<Carros>();
+           carros = new ArrayList<Carros>();
             carros.add(new Carros("celta", 1998, 1));
             carros.add(new Carros("Gol" , 2016, 0));
             carros.add(new Carros("Uno", 2013, 2));
             carros.add(new Carros("KA", 2012, 3));
 
-            adapter = new CarrosAdapter(this, carros);
-            listView.setAdapter(adapter);
+           adapter = new CarrosAdapter(this, carros);
+           listView.setAdapter(adapter);
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -68,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
+    public void novoCarroClick(View view) {
+    }
 }
